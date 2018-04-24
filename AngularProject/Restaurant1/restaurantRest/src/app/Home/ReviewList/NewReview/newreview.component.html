@@ -1,0 +1,38 @@
+<div id = "wrap1">
+	<div id = "wrap2">
+	<h3>Write a review for {{infodata.name}}</h3>
+	<div id = "box">
+		<div id = "insideleft">
+			<p>Your Name:</p>
+			<input [(ngModel)]="user">
+			
+			<div *ngIf="message.user">
+				<p id = "error1">{{message.user.message}}</p>
+			</div>
+
+			<div id = "stardiv">
+				<p>Stars: 
+		    <select [(ngModel)]="myStar">
+		    	<option *ngFor = "let star of stars">{{star.number}}</option>
+
+		    </select>
+		    </p>
+		</div>
+		
+
+			<p>Review:</p>
+			<input [(ngModel)]="review">
+		
+			<div *ngIf="message.description">
+				<p id = "error1">{{message.description.message}}</p>
+			</div>
+		</div>
+
+		
+		<div id = "insideright">
+			<button id = "button5" [routerLink] = "['/reviews/' + infodata._id]">Cancel</button>
+			<button id = "button6" (click)="onButtonClickSubmit()">Submit</button>
+		</div>
+	</div>
+	</div>
+</div>

@@ -1,0 +1,35 @@
+<html>
+	<head>
+	
+		<link rel="stylesheet" href='my_style_sheet.css' type = "text/css">
+	</head>
+
+	<body>
+		<header>
+				<h1>Dojo Survey</h1>
+		</header>
+
+		<div>
+			
+			<form action='/result' method='post'>
+	
+		    <p>Your Name:<input type='text' name='name'></p>
+		    <p>Dojo Location:  <select id = "location1" name="location">
+				    <option value="sanjose">San Jose</option>
+				    <option value="dallas">Dallas</option>
+				    <option value="washington">Washington D.C.</option>
+					  </select></p>
+
+		    <p>Favorite Language:  <select id = "language1" name="language">
+				    <option value="python">Python</option>
+				    <option value="html">HTML</option>
+				    <option value="ruby">Ruby on Rails</option>
+					  </select></p>
+				<p>Comment (optional):</p>
+				<textarea name="comment"></textarea>
+		 
+				<input id="button1" type='submit' value='Submit'>
+			</form>
+		</div>
+	</body>
+</html>

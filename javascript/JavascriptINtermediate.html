@@ -1,0 +1,66 @@
+<html>
+<body>
+
+<script>
+	function starString(num)
+	{
+		let star = "";
+		for (let i = 0; i <num; i++)
+		{
+			star += "*";
+		}
+		return star;
+	}
+
+	function drawStars(arr)
+	{
+		let star = "";
+		for (let i = 0; i < arr.length; i++)
+		{
+			star = "";
+			let thing = arr[i];
+
+			if (thing.constructor == String)
+			{
+				let char1 = thing[0];
+
+				for (let x = 0; x < thing.length; x++)
+				{
+					star += char1;
+				}
+				console.log(star);
+			}	else
+			{
+				for (let x = 0; x < arr[i]; x++)
+				{
+					star += "*";
+				}
+				console.log(star);
+			}
+		}
+	}
+
+
+
+let divide = "----------"
+let stars = starString(8);
+console.log(stars)	;
+
+console.log(divide);
+let x = [4, 6, 1, 3, 5, 7, 25]
+
+drawStars(x);
+console.log(divide);
+console.log(divide);
+let y = [4, "Tom", 1, "Michael", 5, 7, "Jimmy Smith"];
+drawStars(y);
+
+</script> 
+
+<!-- Basic 1 
+<script>
+</script>
+   -->
+
+</body>
+</html>

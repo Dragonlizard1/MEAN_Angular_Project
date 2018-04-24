@@ -1,0 +1,49 @@
+*
+{
+	margin: 0;
+	padding:0;
+	font-size: 25px;
+}
+
+body
+{
+	width:500px;
+	margin: auto;
+	
+}
+div
+{
+	border: 2px solid black;
+
+}
+
+h1
+{
+	margin-top:30px;
+	margin-bottom: 20px;
+	font-size: 60px;
+	font-weight: bolder;
+
+}
+
+h2
+{
+	margin-left: 5px;
+}
+
+p
+{
+	display:inline-block;
+	width:210px;
+	
+	margin: 0 0 5px 20px;
+
+}
+
+#button2
+{
+	width: 100px;
+	margin-left:380px;
+	margin-bottom: 10px;
+	text-align: right;
+}

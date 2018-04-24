@@ -1,0 +1,30 @@
+<html>
+	<head>
+		
+		<link rel="stylesheet" href='my_style_sheet2.css' type = "text/css">
+	</head>
+
+	<body>
+		<header>
+				<h2>Here are the awesome quotes!</h2>
+		</header>
+
+		<div>
+			<% var options = {  
+    weekday: "long", year: "numeric", month: "short",  
+    day: "numeric", hour: "2-digit", minute: "2-digit"  
+}  %>
+			<% for (var x in list1) { %>
+			<ol>
+				<li>"<%=list1[x].quotes%>" </li>
+				<ol>
+					<li class = "Second_list"><%=list1[x].name%> at <%=list1[x].createdAt.toLocaleDateString('en-us', options) %> </li>
+				</ol>
+			</ol>
+			<hr>
+
+			<%  } %>
+			
+		</div>
+	</body>
+</html>

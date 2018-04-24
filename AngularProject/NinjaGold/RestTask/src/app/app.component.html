@@ -1,0 +1,76 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<html>
+<body>
+		<div id = "wrap1">
+			<div class = "left"
+			<h1>Ninja Gold Quest</h1>
+			</div>
+			<div class = "right">
+				<p *ngFor= "let lead1 of leadList">  </p>
+			</div>
+
+
+			<div *ngIf="showLogin">
+			
+			<form id= "name" (submit)="onSubmitName($event)">
+				<label>Name: </label>
+				<input type = "text" name = "n" [(ngModel)]="NameUser">
+				<input  class = "button1" type='submit' value='Login'>
+			</form>
+	
+			</div>
+
+
+		<div *ngIf="showNinjaGold">
+		
+			<form id = "form1" >
+				<label>{{NameUser}}'s Gold: </label><label>{{gold}}</label>
+			</form>
+			<div>
+
+				<form class = "quest" (submit)="onSubmitFarm()">
+					
+					<h2>Farm</h2>
+					<p >(earns 2-5 golds)</p>
+					<input class = "button1" type='submit' value='Find Gold!'>
+				</form>
+
+				<form class = "quest" (submit)="onSubmitCave()">
+					
+					<h2>Cave</h2>
+					<p>(earns 5-10 golds)</p>
+					<input class = "button1" type='submit' value='Find Gold!'>
+				</form>
+
+				<form class = "quest" (submit)="onSubmitHouse()">
+					
+					<h2>House</h2>
+					<p>(earns 7-15 golds)</p>
+					<input class = "button1" type='submit' value='Find Gold!'>
+				</form>
+
+				<form class = "quest" (submit)="onSubmitCasino()">
+					
+					<h2>Casino</h2>
+					<p>(earns/takes 0-100 golds)</p>
+					<input class = "button1" type='submit' value='Find Gold!'>
+				</form>
+			</div>
+			<p>Activities:</p>
+
+				
+			<div id = "activity" >
+				<p *ngFor= "let event1 of eventLog.reverse()">{{event1}}</p>
+ 			</div>
+
+ 			<form  (submit)="onSubmitReset()">
+					
+					<input class = "button1" type='submit' value='Reset'>
+			</form>
+		</div>
+
+		</div>	
+
+		
+	</body>
+</html>

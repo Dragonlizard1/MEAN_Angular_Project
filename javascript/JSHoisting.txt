@@ -1,0 +1,27 @@
+1.  it is 
+undefined
+
+2. print out   
+magnet
+
+3.  print out  
+super cool
+
+
+4. print out
+chicken
+half-chicken
+
+5.  gives  a error because of scoping order
+
+6. print out
+undefined because of the order.
+rock
+r&b
+disco
+
+7. print out
+san jose
+seattle
+burbank
+san jose

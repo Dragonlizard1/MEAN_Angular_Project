@@ -1,0 +1,25 @@
+
+<div id = "wrapper">
+	 <div id = "link1">
+	
+		<a [routerLink] = "['']">Home</a>
+		<a [routerLink] = "['/write', infodata._id]">Add an Quote</a>
+	<p>We have quotes by: {{infodata.author}}</p>
+	</div>
+	<table>
+		<tr>
+			<th>Quotes</th>
+			<th>Votes</th>
+			<th>Actions Available</th>
+		</tr>
+		
+		<tr *ngFor="let isdata of infodata.quote_id" >
+			<td>{{isdata.quote}}</td>
+			<td>{{isdata.vote}}</td>
+			<td>
+				<button (click)="onButtonClickVoteUp(isdata._id, isdata.vote)">Vote Up</button> 
+				<button (click)="onButtonClickVoteDown(isdata._id, isdata.vote)">Vote Down</button> 
+				<button (click)="onButtonClickDelete(isdata._id)">Delete</button></td>
+		</tr>
+	</table>
+</div>

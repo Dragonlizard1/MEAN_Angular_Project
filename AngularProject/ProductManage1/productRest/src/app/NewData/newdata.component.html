@@ -1,0 +1,13 @@
+<div id = "wrap1">
+	<div id = "box">
+		<p>Create a New Product</p>
+		<p class = "label1">Name</p><input [(ngModel)]="ProductName">
+		<p class = "label1">Price</p><input [(ngModel)]="Price">
+		<p class = "label1">Image url</p><input [(ngModel)]="Imageurl">
+		<div style = "text-align:right">
+			<button [routerLink] = "['']">Cancel</button>
+			<button (click)="onButtonClickSubmit()">Create</button>
+		</div>
+		
+	</div>
+</div>

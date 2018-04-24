@@ -1,0 +1,35 @@
+
+<div id = "wrapper">
+	<div id = "link1">
+	<button id = 'button1' [routerLink] = "['new']">New Product</button>
+	
+
+	
+    	<table>
+    		<tr id = "head1">
+                <th>ID</th>
+    			<th>Name</th>
+    			<th>QTY</th>
+                <th>PRICE</th>
+                <th>Actions</th>
+    		</tr>
+          
+    		<tr *ngFor="let isdata of infodata, let item_num = index" >
+
+                <td>{{item_num +1}}</td>
+    			<td>{{isdata.name}}</td>
+                <td>{{isdata.quantity}}</td>
+                <td>{{isdata.price}}</td>
+    			
+                <td>
+                    <button id = "button3" [routerLink] = "['edit/' , (item_num+ 1)]">Edit</button> 
+                    <button id = "button4" (click) = "onButtonClickDelete(item_num + 1)">Delete</button> 
+                </td>
+    		</tr>
+            
+    	</table>
+    </div>
+
+</div>
+
+

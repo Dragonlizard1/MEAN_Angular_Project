@@ -1,0 +1,70 @@
+*
+{
+	margin:0;
+	padding:0;
+	font-family: arial;
+}
+
+body
+{
+	width: 970px;
+	margin: auto;
+	padding-top: 25px;
+}
+
+img
+{
+	display: inline-block;
+	height: 110px;
+	width: 200px;
+	object-fit: fill;
+	border: 5px solid grey;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+
+
+
+#house_info
+{
+	border: 1px solid black;
+	width: 700px;
+	height: 300px;
+	margin: auto;
+	margin-top: -15px;
+	padding: 25px;
+	object-fit: contain;
+  
+}
+
+
+
+#house_title
+{
+	width: 200px;
+	background-color: white;
+	display:inline-block;
+	margin-left: 150px;
+	text-align: center;
+	padding: 20px 20px 0 20px;
+	font-weight: bolder;
+	font-size: 25px;
+
+	
+}
+
+h2
+{
+	margin-top: 10px;
+}
+
+p
+{
+	margin: 15px 0 15px 0;
+}
+
+#house_info p:last-child
+{
+  margin-top: 30%;
+	vertical-align: bottom;
+}

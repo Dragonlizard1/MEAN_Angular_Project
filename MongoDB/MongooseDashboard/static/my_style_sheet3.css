@@ -1,0 +1,24 @@
+*
+{
+	margin: 0;
+	padding:0;
+	font-size: 25px;
+}
+
+body
+{
+	width:500px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+div
+{
+	border: 1px solid black;
+}
+
+a
+{
+	padding: 10px;
+}
+

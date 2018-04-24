@@ -1,0 +1,9 @@
+<div id = "wrap1">
+	<div>
+		<h1>Sell ShintoCoins</h1>
+		<p>Current ShintoCoin Value: ${{ShintoValue}}.00</p>
+		<p>Number of ShintoCoins Owned: {{ShintoOwned}}</p>
+		<input placeholder="Number" [(ngModel)]="value1"><button (click)="onButtonClickSellCoin()">Submit</button>
+		<p *ngIf="showmessage">{{message1}}</p>
+	</div>
+</div>

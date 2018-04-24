@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" type="text/css" href="weather_style.css">
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+  </head>
+  <body>
+
+  	<div>
+      <form id = "form1">
+  		<input type = "text" id = "user_city" placeholder="Enter U.S. city">
+       <input type="submit" value="Search Weather">
+  		
+          </form>
+  	</div>
+
+  	<h1></h1>
+  	
+<script>
+ (function(){
+function $weather(id)
+    {
+      element = document.getElementById(id)
+     return {
+       submit: function(callback1) 
+       {
+        
+          element.addEventListener("submit", callback1);
+          
+       }
+      };
+  
+     
+    }
+
+call2 = function(event)
+    { 
+      event.preventDefault();
+     var city1 = $("#user_city").val();
+      $.get("https://api.openweathermap.org/data/2.5/weather?q=" + city1 + ",us&&APPID=8dd1a234a19ba5a45678160be2aefb5b", function(res) 
+      {
+          var tempF= parseInt((res.main.temp * (9/5)) - 459.67);
+          
+          $("h1").html(city1 + " today temperature is " + tempF + " Fahrenheit");
+
+      }, "json");
+       
+        
+    };
+
+
+$weather("form1").submit(call2);
+
+})();
+
+
+</script>
+
+  </body>
+
+</html>

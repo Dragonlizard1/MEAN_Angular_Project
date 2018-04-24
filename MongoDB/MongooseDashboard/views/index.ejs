@@ -1,0 +1,34 @@
+<html>
+	<head>
+		
+		<link rel="stylesheet" href='/my_style_sheet2.css' type = "text/css">
+	</head>
+
+	<body>
+		<header>
+				<h1>Welcome To Mongoose Dashboard</h1>
+		</header>
+
+		<div>
+			<% var options = {  
+    weekday: "long", year: "numeric", month: "short",  
+    day: "numeric", hour: "2-digit", minute: "2-digit"  
+}  %>
+			<% if (list1) { %>
+			<% for (var x in list1) { %>
+			<ol>
+				<li><a href = "/mongoose/<%= list1[x]._id %>"><%=list1[x].name%></a></li>
+				<li>Animal attribut:<%=list1[x].animal%></li>
+				<ol>
+					<li class = "Second_list">Created: <%=list1[x].createdAt.toLocaleDateString('en-us', options) %> </li>
+				</ol>
+			</ol>
+			<hr>
+
+			<%  } %>
+			<%  } %>
+			
+		</div>
+		<a href = "/mongoose/new">Add New Mongoose</a>
+	</body>
+</html>

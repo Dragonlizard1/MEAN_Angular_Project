@@ -1,0 +1,31 @@
+*
+{
+	margin: 0;
+	padding:0;
+
+}
+
+body
+{
+	width:500px;
+	margin: auto;
+	
+}
+hr
+{
+	border: 2px solid black;
+
+}
+
+li
+{
+	list-style: none;
+
+}
+
+
+.Second_list
+{
+	margin-left: 10px;
+}
+

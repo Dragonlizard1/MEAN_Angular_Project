@@ -1,0 +1,9 @@
+<div id = "wrap1">
+	<div>
+		<h1>Mine ShintoCoins</h1>
+		<p>Here you can mine ShintoCoins by being the first to solve the algorithm:</p>
+		<p>What is the 3th Fibonacci sequence number?</p>
+		<input placeholder="Number" [(ngModel)]="FibonacciAnswer"><button (click)="onButtonClickMineCoin()">Submit</button>
+		<p *ngIf="showmessage">{{message1}}</p>
+	</div>
+</div>

@@ -1,0 +1,31 @@
+<div id = "wrap1">
+	<div id = "wrap2">
+	<h3>Product Details</h3>
+	<div id = "box">
+		<p>Name:</p>
+		<input [(ngModel)]="infodata.name">
+			
+			<div *ngIf="message.name">
+				<p id = "error1">{{message.name.message}}</p>
+			</div>
+		
+		<p>Qty:</p>
+		<input [(ngModel)]="infodata.quantity">
+
+			<div *ngIf="message.quantity">
+				<p id = "error1">{{message.quantity.message}}</p>
+			</div>
+
+		<p>Price:</p>
+		<input [(ngModel)]="infodata.price">
+		
+			<div *ngIf="message.price">
+				<p id = "error1">{{message.price.message}}</p>
+			</div>
+		<div id = "right1">
+		<button id = "button5" [routerLink] = "['']">Cancel</button>
+		<button id = "button6" (click)="onButtonClickSubmit()">Submit</button>
+		</div>
+	</div>
+</div>
+</div>

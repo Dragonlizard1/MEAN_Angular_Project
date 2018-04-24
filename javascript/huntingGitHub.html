@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+<button id="someButton">This is Some Button</button>
+<script>
+
+	var button = document.getElementById("someButton")
+	// add a DOM eventListener to that variable.
+	button.addEventListener("click", whatToDoOnClick);
+	// here we define the whatToDoOnClick function
+
+	function whatToDoOnClick() {
+		$.get("https://api.github.com/users/dragonlizard1", displayName)
+
+		
+	}
+	function displayName(data) {
+  console.log(data);
+}
+// function displayName(data) {
+//   console.log(data);
+// }
+
+</script>
+</body>
+</html>

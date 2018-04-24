@@ -1,0 +1,38 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<body>
+<div style="text-align:center">
+  <img width="100" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+
+<div id = "alltask">
+	<h1>Restful Tasks API</h1>
+
+<button (click)="onButtonClick()" >Click to get all tasks</button>
+
+	<div id = "datalist" *ngFor="let isdata of data1; let i = index">
+		<h3>ID: {{i +1}}</h3>
+		<h2 >Title: {{isdata.title}} </h2>
+		<h3 >Description: {{isdata.description}} </h3>
+		<h3 >Completed: {{isdata.completed}} </h3>
+	</div>
+
+</div>
+
+<div id = "taskid1">
+	<p>Enter the ID to display:</p>
+	<input id = "task_id" type = "text" [(ngModel)]="find_num">
+	<button (click)="onButtonClick2()" >Click to get ID tasks</button>
+
+
+	<div id = "datalist" *ngIf="show">
+		<h1>Display Info:</h1>
+		<h3>ID: {{index1 +1}}</h3>
+		<h2 >Title: {{data2.title}} </h2>
+		<h3 >Description: {{data2.description}} </h3>
+		<h3 >Completed: {{data2.completed}} </h3>
+	</div>
+</div>
+
+
+
+</body>

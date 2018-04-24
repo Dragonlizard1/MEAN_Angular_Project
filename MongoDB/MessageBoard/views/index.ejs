@@ -1,0 +1,59 @@
+<html>
+	<head>
+		
+		<link rel="stylesheet" href='/my_style_sheet.css' type = "text/css">
+	</head>
+
+	<body>
+		<header>
+				<h1>Welcome To The Dojo Message Board</h1>
+		</header>
+
+		<div>
+			
+			<form id = "form1" action = "/processmessage" method="POST">
+	
+		   	<p>Name: <input type='text' name='name_message'></p>  		   
+				<p>Message: <textarea id = "text1" type='text' name='message'></textarea></p>	 
+						<div class = "right"><input class="button1" type='submit' value='Post Message'></div>
+				
+			</form>
+		</div>
+
+
+
+		<div>
+			
+		<% if (list1) { %>
+			<% for (let x = 0; x< list1.length; x++) { %>
+			<ol>
+				<li class = "FirstList">Name: <%=list1[x].name%></a></li>
+				<li class = "FirstList">Message: <%=list1[x].message1%></li>
+			</ol>
+				<% for (let y = list1[x].comment_id.length -1; y >= 0; y--) { %>
+				<ol>
+					<li class = "SecondList">Name: <%=list1[x].comment_id[y].name%></a></li>
+					<li class = "SecondList">Comment: <%=list1[x].comment_id[y].comment1%></li>
+				</ol>
+				<%  } %>
+			
+			
+			<div>
+				<form id = "form1" action = "/processcomment/<%=list1[x]._id%>" method="POST">
+		
+			   	<p>Name: <input type='text' name='name_comment'></p>  		   
+					<p>Comment: <textarea id = "text1" type='text' name='comment'></textarea></p>	 
+							<div class = "right"><input class="button1" type='submit' value='Comment Message'></div>
+					
+				</form>
+			</div>
+
+			<%  } %>
+		<%  } %>
+			
+		</div>
+
+		
+
+	</body>
+</html>

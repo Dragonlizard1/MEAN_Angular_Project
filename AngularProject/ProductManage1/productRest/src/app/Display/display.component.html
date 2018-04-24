@@ -1,0 +1,17 @@
+
+<div id = "wrapper">
+	<h1>Products List</h1>
+	 <div class = "box" *ngFor = "let isdata of infodata; let i = index" >
+	 	
+	 	
+	 		<img class = "label1" src = "{{isdata.image_url}}" alt = "image">
+	
+		<p class = "label1">{{isdata.title}}</p>
+		<p class = "label1">{{isdata.price}}</p>
+		<div id = "button1">
+			<button (click)="onButtonClickEdit(i)">Edit</button> 
+			<button (click)="onButtonClickDelete(i)">Delete</button>
+		</div>
+	</div>
+	
+</div>

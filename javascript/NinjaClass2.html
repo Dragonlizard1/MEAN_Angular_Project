@@ -1,0 +1,82 @@
+<html>
+<body>
+ 
+<script>
+function Ninja(name)
+{
+	this.name = name; 
+	this.health = 100;
+	let speed = 3;
+	let strength = 3;
+
+	this.sayName = function ()
+	{
+		console.log(this.name);
+		return this;
+	}
+
+	this.showStats = function()
+	{
+		console.log("Ninja: ", this.name);
+		console.log("Strength: ", strength);
+		console.log("Speed: ", speed);
+		console.log("Health: ", this.health);
+		return this;
+	}
+
+	this.drinkSake = function ()
+	{
+		this.health += 10;
+		return this;
+	}
+
+	this.punch = function(enemy1)
+	{
+		if (enemy1 instanceof Ninja)
+		{
+
+		enemy1.health -= 5; 
+		console.log(enemy1.name, "was punched by", this.name, "and lost 5 Health!");
+		return this;
+
+		}
+		else
+		{
+			console.log("Enemy is not a ninja.")
+		}
+	}
+
+	this.kick = function(enemy1)
+	{
+		if (enemy1 instanceof Ninja)
+		{
+		this.value1 = 0;
+		this.value1 = strength * 15;
+		console.log(enemy1.name, "was kicked by", this.name, "and lost", this.value1 ,"Health!");
+		enemy1.health -= this.value1;
+		}
+		else
+		{
+			console.log("Enemy is not a ninja.")
+		}
+
+	}
+}
+
+
+
+// const ninja1 = new Ninja("Hyabusa");
+// ninja1.sayName();
+// -> "My ninja name is Hyabusa!"
+//ninja1.showStats();
+// -> "Name: Hayabusa, Health: 100, Speed: 3, Strength: 3"
+const blueNinja = new Ninja("Goemon");
+const redNinja = new Ninja("Bill Gates");
+redNinja.punch(blueNinja);
+blueNinja.kick(redNinja);
+redNinja.showStats();
+blueNinja.showStats();
+
+</script>   
+</body>
+</html>

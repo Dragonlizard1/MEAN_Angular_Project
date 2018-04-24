@@ -1,0 +1,72 @@
+*
+{
+	margin: 10px;
+	padding:0;
+	border:none;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+body
+{
+	width:970px;
+	margin:auto;
+}
+
+img
+{
+ margin: auto;
+  text-align: center;
+  
+}
+
+#pokedex_img
+{
+	width: 250px;
+	height: 150px;
+
+	object-fit: contain;
+	object-position: center;
+}
+
+div
+{
+	width: 600px;
+	padding: 10px;
+	border: 1px solid black;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#pokedex
+{
+	height: 450px;
+	width:250px;
+	border: 10px solid red;
+	border-radius: 10px;
+	background: lightgrey;
+}
+
+li
+{
+	margin-left: 20px;
+	text-transform: capitalize;
+}
+
+button
+{
+	/*tester button*/
+	width: 250px;
+	height: 50px;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 50px;
+}
+
+h2
+{
+	text-align: center;
+	text-transform: capitalize;
+}

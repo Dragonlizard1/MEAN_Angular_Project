@@ -1,0 +1,35 @@
+<html>
+	<head>
+	
+		<link rel="stylesheet" href='my_style_sheet.css' type = "text/css">
+	</head>
+
+	<body>
+		<header>
+				<h1>Welcome To QuotingDojo</h1>
+		</header>
+
+		<div>
+			
+			<form id = "form1" action = "/process" method="POST">
+	
+		    <p>Your Name:<input type='text' name='name'></p>
+		    
+
+		   
+				<p>Your Quote:</p>
+				<textarea name="quote1"></textarea>
+		 
+				<input id="button1" type='submit' value='Add My Quote'>
+				
+			</form>
+
+			<div id = "right">
+				<form id = "form2" action= "/quote1" method = "POST">
+					<input id = "display" type = "submit" value = "Skip To Quotes">
+				</form>
+			</div>
+			
+		</div>
+	</body>
+</html>

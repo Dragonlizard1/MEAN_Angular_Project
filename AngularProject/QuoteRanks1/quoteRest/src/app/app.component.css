@@ -1,0 +1,30 @@
+#wrapper
+{
+	width: 1000px;
+	margin: auto;
+	margin-top: 25px;
+ 	margin-bottom: 25px;
+}
+#link1
+{
+
+	width: 800px;
+	display: inline-block;
+	vertical-align: top;
+}
+button
+{
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+}
+
+img
+{
+	width: 90px;
+	display: inline-block;
+}
+h1, h4
+{
+	text-align: left;
+}

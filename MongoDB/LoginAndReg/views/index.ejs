@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Login and Reg</title>
+
+  <link rel="stylesheet" href='/my_style_sheet.css' charset="utf-8">
+</head>
+<body>
+   <% if((errors) != 'undefined' ) { %>
+     <% for (var x in errors) { %>
+      <h3><%= errors[x].message %></h3>
+     <% } %>
+ <% } %>
+
+
+
+  <div class = "modify">
+    <h2>Registration:</h2>
+    <form action='/' method='POST'>   
+   
+      <p><label for="f_name">First Name: <input type="text" name="f_name" id="name"></label></p>
+      <p><label for="l_name">Last Name: <input type="text" name="l_name" id="l_name"></label></p>
+      <p><label for="email">Email: <input type="text" name="email" id="email"></label></p>
+      <p><label for="password">Password: <input type="text" name="password" id="password"></label></p>
+      <p><label for="c_password">Confirm pw: <input type="text" name="c_password" id="c_password"></label></p>
+      <p><label for="date_of_birth">Date of Birth: <input type="date" name="date_of_birth" id="date_of_birth"></label></p>
+     
+      <input class = "button" type="submit" value="Register">
+    </form>
+  </div>
+
+  <div class = "modify">
+    <h2>Login:</h2>
+    <form action='/login' method='POST'>   
+
+
+      <p><label for="email">Email:<input type="text" name="email" id="email"></label></p>
+      <p><label for="password">Password:<input type="text" name="password" id="password"></label></p>
+      <input class = "button" type="submit" value="Login">
+    </form>
+  </div>
+
+</body>
+</html>

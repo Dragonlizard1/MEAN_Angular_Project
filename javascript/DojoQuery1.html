@@ -1,0 +1,69 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+<button id="someIdForSomeButton">This is Some Button</button>
+
+<p id="someOtherIdForSomeOtherButton">This is Hover Button</p>
+
+
+
+<script>
+//src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+//http://code.jquery.com/jquery-1.11.0.js
+
+
+function $Dojo(id)
+{
+	var element = document.getElementById(id)
+	return  {
+   click: function(callback1) 
+   {
+
+   		element.addEventListener("click", callback1);
+     	
+   },
+
+   hover: function(callback1, callback2) 
+   { 
+     element.addEventListener("mouseover", callback1);
+     element.addEventListener("mouseout", callback2) ;    
+   }
+ }
+
+}
+function call1() { console.log("The button was clicked!") };
+call2 = function() { console.log("The text hover1 was clicked!") };
+$Dojo("someIdForSomeButton").click(call1);
+$Dojo("someOtherIdForSomeOtherButton").hover(call2);
+
+
+
+// Dojo = document.getElementById("someIdForSomeButton");
+// Dojo.addEventListener("click", function() { console.log("The button was clicked!") });
+
+
+//Dojo("someOtherIdForSomeOtherButton").hover(function() { console.log("The button was hovered on!") });
+
+	//var button = document.getElementById("someButton")
+	// add a DOM eventListener to that variable.
+//	button.addEventListener("click", whatToDoOnClick);
+	// here we define the whatToDoOnClick function
+
+	// function whatToDoOnClick() {
+	
+	// $Dojo.click(function() { console.log("The button was clicked!") });
+		
+	// }
+
+// function displayName(data) {
+//   console.log(data);
+// }
+
+</script>
+</body>
+</html>

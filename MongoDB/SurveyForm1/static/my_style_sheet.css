@@ -1,0 +1,60 @@
+*
+{
+	margin: 0;
+	padding:0;
+	font-size: 25px;
+}
+
+body
+{
+	width:500px;
+	margin: auto;
+	
+}
+div
+{
+	border: 2px solid black;
+}
+form
+{
+
+	padding:25px;
+	
+}
+form input:first-child
+{
+	width: 300px;
+	margin-left:16px;
+}
+
+#location1
+{
+	margin-left:67px;
+}
+
+#language1
+{
+	margin-left:57px;
+}
+
+h1
+{
+	margin-top:30px;
+	margin-bottom: 20px;
+	font-size: 60px;
+	font-weight: bolder;
+
+}
+p
+{
+	margin-bottom: 5px;
+}
+textarea
+{
+	text-decoration-style: none;
+	width: 440px;
+}
+#button1
+{
+	margin-top: 5px;
+}

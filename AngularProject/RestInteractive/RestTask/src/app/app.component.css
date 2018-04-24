@@ -1,0 +1,40 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: "Arial";
+}
+
+body
+{
+	width: 600px;
+	margin: auto;
+
+}
+
+#datalist
+{
+	text-align:left;
+	padding:10px;
+}
+
+#alltask
+{
+	width: 600px;
+	height: 300px;
+	border: 1px solid black;
+	overflow-y: scroll;
+	overflow-wrap: break-word;
+}
+
+#taskid1
+{
+	width: 600px;
+	height: 200px;
+	border: 1px solid black;
+}
+
+input
+{
+	display: inline-block;
+}

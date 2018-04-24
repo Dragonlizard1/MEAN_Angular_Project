@@ -1,0 +1,74 @@
+<html>
+<body>
+ 
+<script>
+let students = [
+    {name: 'Remy', cohort: 'Jan'},
+    {name: 'Genevieve', cohort: 'March'},
+    {name: 'Chuck', cohort: 'Jan'},
+    {name: 'Osmund', cohort: 'June'},
+    {name: 'Nikki', cohort: 'June'},
+    {name: 'Boris', cohort: 'June'}
+];
+
+let users = {
+    employees: [
+        {'first_name':  'Miguel', 'last_name' : 'Jones'},
+        {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+        {'first_name' : 'Nora', 'last_name' : 'Lu'},
+        {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+    ],
+    managers: [
+       {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+       {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+    ]
+ };
+
+  function challenge1(arr)
+  {
+
+
+    for (let index in arr)
+    {
+      strlist = "";
+       
+      strlist =  "Name: " + arr[index].name + ", Cohort: " + arr[index].cohort;
+     
+      console.log(strlist);
+
+    };
+
+
+  };
+
+  function challenge2(arr)
+  {
+    let strlist;
+    let num1;
+
+    for (let key1 in arr)
+    {
+      console.log(key1.toUpperCase());
+
+      for (let index = 0; index < arr[key1].length; index++)
+      {
+     
+        num1 = 0;
+        strlist = "";
+        let name1 =  arr[key1][index].first_name;
+        let name2 = arr[key1][index].last_name;
+        num1 = name1.length + name2.length;
+        let num2 = Number(index) + 1;
+        strlist =  num2 + " - " + name1 + "  " + name2 + " - " + num1;
+       
+        console.log(strlist);
+
+      };
+    };
+  };
+     
+//challenge1(students);
+challenge2(users);
+</script>   
+</body>
+</html>

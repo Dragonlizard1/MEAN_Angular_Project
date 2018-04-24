@@ -1,0 +1,12 @@
+<div id = "wrap1">
+	<a [routerLink] = "['']">Home</a>
+	<p>Provide a quotes by: {{infodata.author}}</p>
+	<div id = "box">
+		<p>Quote:</p>
+		<input [(ngModel)]="quote">
+		<button [routerLink] = "['/quote', infodata._id]">Cancel</button><button (click)="onButtonClickSubmit()">Submit</button>
+		<div *ngIf="message">
+			<p id = "error1">{{message.quote.message}}</p>
+		</div>
+	</div>
+</div>

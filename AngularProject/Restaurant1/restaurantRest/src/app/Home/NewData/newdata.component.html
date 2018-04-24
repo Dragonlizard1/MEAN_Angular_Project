@@ -1,0 +1,24 @@
+<div id = "wrap1">
+	<div id = "wrap2">
+	<h3>Register a restaurant</h3>
+	<div id = "box">
+		<p>Restaurant Name:</p>
+		<input [(ngModel)]="name">
+			
+			<div *ngIf="message.name">
+				<p id = "error1">{{message.name.message}}</p>
+			</div>
+
+		<p>Cuisine:</p>
+		<input [(ngModel)]="cuisine">
+		
+			<div *ngIf="message.cuisine">
+				<p id = "error1">{{message.cuisine.message}}</p>
+			</div>
+		<div id = "right1">
+		<button id = "button5" [routerLink] = "['']">Cancel</button>
+		<button id = "button6" (click)="onButtonClickSubmit()">Submit</button>
+		</div>
+	</div>
+</div>
+</div>

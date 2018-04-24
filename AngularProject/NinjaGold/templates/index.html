@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<!-- linking a css style sheet -->
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='my_style_sheet.css') }}">
+	</head>
+
+	<body>
+		<div id = "wrap1">
+			<h1>Ninja Gold Quest</h1>
+			<form id = "form1">
+				<label>Your Gold: </label><label>{{session["mygold"]}}</label>
+			</form>
+			<div>
+				<form class = "quest" action = "/process_money" method ="post">
+					<input type="hidden" name="building" value="farm" />
+					<h2>Farm</h2>
+					<p>(earns 10-20 golds)</p>
+					<input class = "button1" type='submit' value='Find Gold!'>
+				</form>
+
+				<form class = "quest" action = "/process_money" method ="post">
+					<input type="hidden" name="building" value="cave" />
+					<h2>Cave</h2>
+					<p>(earns 5-10 golds)</p>
+					<input class = "button1" type='submit' value='Find Gold!'>
+				</form>
+
+				<form class = "quest" action = "/process_money" method ="post">
+					<input type="hidden" name="building" value="house" />
+					<h2>House</h2>
+					<p>(earns 2-5 golds)</p>
+					<input class = "button1" type='submit' value='Find Gold!'>
+				</form>
+
+				<form class = "quest" action = "/process_money" method ="post">
+					<input type="hidden" name="building" value="casino" />
+					<h2>Casino</h2>
+					<p>(earns/takes 0-50 golds)</p>
+					<input class = "button1" type='submit' value='Find Gold!'>
+				</form>
+			</div>
+			<p>Activities:</p>
+
+				
+			<div id = "activity">
+				{% for x in session["activity1"] | reverse: %}
+					{% if x[1] == "pos": %}
+						<h4>{{x[0]}}</h4>
+					{% elif x[1] == "neg": %}
+						<h5>{{x[0]}}</h5>
+				 	{% endif %}
+			 	{% endfor %}
+ 			</div>
+
+ 			<form  action = "/reset" method ="post">
+					
+					<input class = "button1" type='submit' value='Reset'>
+			</form>
+
+		</div>	
+
+		
+	</body>
+</html>

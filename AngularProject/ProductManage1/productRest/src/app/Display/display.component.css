@@ -1,0 +1,47 @@
+#wrapper
+{
+	width: 840px;
+	height:470px;
+	
+	margin: auto;
+	margin-top: 25px;
+ 	margin-bottom: 25px;
+ 	border: 5px solid black;
+ 	border-radius: 25px;
+ 	overflow-y: scroll;
+ 	
+ 	
+ 	
+}
+
+.box
+{
+	margin: 10px;
+	width: 250px;
+	height: 360px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 25px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+h1
+{
+	margin:10px;
+}
+img
+{
+	min-width:225px;
+	min-height:225px;
+	width:225px;
+	height:225px;
+
+}
+
+#button1
+{
+    display: inline-block;
+    padding: 10px;
+}
+

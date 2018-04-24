@@ -1,0 +1,34 @@
+<html>
+	<head>
+		
+		<link rel="stylesheet" href='/my_style_sheet3.css' type = "text/css">
+	</head>
+
+	<body>
+		
+			
+
+
+		<div>
+			<% var options = {  
+    weekday: "long", year: "numeric", month: "short",  
+    day: "numeric", hour: "2-digit", minute: "2-digit"  
+}  %>
+			<% if (list1) { %>
+			
+		     <h1><%=list1[0].name%></h1>
+				<h3>Animal attribute: <%=list1[0].animal%></h3>
+				
+				<h5>Created: <%=list1[0].createdAt.toLocaleDateString('en-us', options) %> </h5>
+				
+
+			
+		</div>
+		<div><a href = "/">Home</a>
+			<a href = "/mongoose/new">Add New Mongoose</a>
+			<a href = "/mongoose/edit/<%= list1[0]._id %>">Edit</a>
+			<a href = "/mongoose/destroy/<%= list1[0]._id %>">Delete</a>
+		</div>
+		<%  } %>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+
+<div id = "wrapper">
+	 <div id = "link1">
+	
+	
+		<button id = 'button1' [routerLink] = "['/write', infodata._id]">New Review</button>
+	<h3>Reviews for {{infodata.name}}</h3>
+	</div>
+	<table>
+		<tr id = "head1">
+			<th>Customer</th>
+			<th>Stars</th>
+			<th>Description</th>
+		</tr>
+		 
+		<tr *ngFor="let isdata of infolist ">
+			<td>{{isdata.user}}</td>
+			<td>{{isdata.star}}</td>
+			<td>{{isdata.description}}</td>
+			
+		</tr>
+	</table>
+</div>

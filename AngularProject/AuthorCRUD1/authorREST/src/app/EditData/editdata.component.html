@@ -1,0 +1,10 @@
+<div id = "wrap1">
+	<a [routerLink] = "['']">Home</a>
+	<p>Edit this author:</p>
+	<div id = "box">
+		<p>Name:</p>
+		<input [(ngModel)]="infodata.author">
+		<button [routerLink] = "['']">Cancel</button><button (click)="onButtonClickSubmit()">Submit</button>
+		<p *ngIf="showmessage">{{message1}}</p>
+	</div>
+</div>

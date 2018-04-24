@@ -1,0 +1,76 @@
+<html>
+<head>
+</head>
+<body >
+
+<script>
+
+
+class Deck{
+  constructor(){
+    this.suits = ['A', 'B', 'C', 'D'];
+    this.cards = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'X', 'J', 'Q', 'K'];
+    const populate = [];
+    // for(let i=0;i<suits.length;i++){
+    //   var suit = suits[i];
+    //   for(let i=0;i<cards.length;i++){
+    //     var card = cards[i];
+    //     populate.push(suit+card);
+    //   }
+    // }
+    this.deck1 = [];
+    this.reset = [];
+    
+    //console.log(this.reset, "start1");
+  }
+  shuffle(deckset){
+    var m = tester.deck1.length;
+    var t;
+    var i;
+   
+    while(m){
+      i = Math.floor(Math.random()*m--);
+      t = deckset[m];
+      deckset[m] = deckset[i];
+      deckset[i] = t;
+
+    }
+    return deckset;
+   
+  }
+
+  resetter() {
+
+    let populate1 = [];
+    for(let i=0;i<this.suits.length;i++){
+      var suit = this.suits[i];
+      for(let i=0;i<this.cards.length;i++){
+        var card = this.cards[i];
+        populate1.push(suit+card);
+      }
+    }
+    return populate1;
+   
+  }
+
+}
+
+
+
+
+
+let tester = new Deck();
+tester.deck1 = tester.resetter();
+tester.reset = tester.resetter();
+
+console.log(tester.deck1, "decklist");
+console.log(tester.reset, "resetlist");
+tester.reset = tester.shuffle(tester.reset);
+console.log(tester.deck1, "decklist");
+console.log(tester.reset, "resetlist");
+//tester.resetter();
+//console.log(tester.deck);
+//console.log('\u2660 \u2665 \u2666 \u2663');
+</script>
+</body>
+</html>

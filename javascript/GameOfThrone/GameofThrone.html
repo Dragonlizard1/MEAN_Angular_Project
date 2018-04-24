@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Game Of Throne</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="throne_style.css">
+  
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+   
+ 
+
+  </head>
+  
+  <body>
+  	<div>
+  		<img onclick= "stark()" id = 362 src = "image/stark.jpg">
+  		<img onclick= "targaryen()" id = 378 src = "image/targaryen.jpg">
+  		<img onclick= "baratheon()" id = 17 src = "image/baratheon.png">
+  		<img onclick= "lannister()" id = 229 src = "image/lannister.jpg">
+  	</div>
+  	<label id = "house_title">House Details</label>
+  	<div id = "house_info">
+  	</div>
+  
+
+  <script>
+
+    function $Gamer1(id)
+    {
+      this.data = 
+      {
+       click: function(callback1) 
+       {
+          document.getElementById(id).addEventListener("click", callback1);
+          
+       },
+      };
+
+     
+     return this.data;
+    };
+
+call2 = function(id1)
+    { 
+    
+      var find_house; 
+
+      
+      find_house = "https://www.anapioficeandfire.com/api/houses/" + id1;
+    
+      $.get(find_house, function(data1) 
+      {
+        var house_set = "<h2>Name: " + data1.name + "</h2>";
+        house_set += "<p>Words: " + data1.words + "</p>";
+        house_set += "<p>Titles: ";
+
+        for (var i = 0; i < data1.titles.length; i++)
+        {
+          if ((data1.titles.length - 1) != i)
+          {
+            house_set += data1.titles[i] + ", ";
+          }
+          else
+          {
+            house_set += data1.titles[i] + "</p>";
+          }
+        }
+        
+
+        $("#house_info").html(house_set);   
+
+      }, "json"); // end of get
+    };
+
+function stark(){
+$Gamer1($("img").attr("id")).click(call2(362));
+};
+function targaryen(){
+$Gamer1($("img").attr("id")).click(call2(378));
+};
+function baratheon(){
+$Gamer1($("img").attr("id")).click(call2(17));
+};
+function lannister(){
+$Gamer1($("img").attr("id")).click(call2(229));
+};
+
+
+   </script>
+
+
+
+
+  </body>
+
+</html>

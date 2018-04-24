@@ -1,0 +1,41 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+div
+{
+	text-align: left;
+	padding: 10px;
+	
+
+}
+
+#error1
+{
+	color: red;
+}
+#wrap1
+{
+	text-align: left;
+	width: 1000px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+
+#wrap2
+{
+	text-align: left;
+	display:inline-block;
+	border: none;
+	vertical-align: top;
+
+}
+
+img
+{
+	width: 550px;
+
+}
