@@ -1,0 +1,39 @@
+*
+{
+	margin: 0;
+	padding:0;
+	font-family: arial;
+}
+
+body
+{
+	width:950px;
+	margin: auto;
+	
+}
+div
+{
+	text-align: center;
+}
+h1
+{
+	font-size: 100px;
+
+}
+
+h3
+{
+	font-size: 40px;
+
+}
+a
+{
+	text-decoration: none;
+	color: black;
+}
+input
+{
+	margin: 15px;
+	padding:10px;
+}
+

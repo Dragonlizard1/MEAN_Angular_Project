@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<!-- linking a css style sheet -->
+		<link rel="stylesheet" type="text/css" href='my_style_sheet.css'>
+<script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function (){
+        // this triggers the connection event in our server!
+        var socket = io.connect();
+        var count=0;
+        socket.emit( "initial1"  );
+	
+
+       
+	        $('#button1').click(function (data){
+	         			
+			socket.emit( "button_clicked" );
+			 
+			return false;
+			});
+
+			 $('#button2').click(function (data){
+	         			
+			socket.emit( "reset1" );
+			 
+			return false;
+			});
+
+			socket.on( 'server_response', function (data){
+				count = data.count1;
+				$("#count1").html(data.count1);
+			 
+			});
+
+		
+			
+        
+		});
+		</script>
+
+	</head>
+
+	<body>
+		<div>
+			<h3 >The button has been pushed <span id = "count1"></span> time(s) </h3>
+		
+			
+			
+			<label> Push the button to update the account.</label>
+			<button id = "button1">Push The Epic Button</button>
+	
+		</div>	
+		<div id = "reset">
+		<button id = "button2">RESET</button>
+
+
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,59 @@
+*
+{
+	margin: 0;
+	padding:0;
+	font-family: arial;
+}
+
+body
+{
+	width:700px;
+	margin: auto;
+	
+}
+#board
+{
+	width:680px;
+	height: 500px;
+	text-align: left;
+	overflow-y: scroll;
+	border: 2px solid blue;
+	padding: 10px;
+	overflow-wrap: break-word;
+}
+
+
+h3
+{
+	margin-bottom: 10px;
+	font-size: 30px;
+
+}
+
+label
+{
+	font-size: 20px;
+	margin: 10px 0 10px 0;
+}
+
+
+
+
+input
+{
+	width: 700px;
+	font-size:medium;
+	margin: 10px 0 10px 0;
+}
+#button_div
+{
+	width: 700px;
+	text-align: right;
+}
+#button1
+{
+	background-color: lime;
+	width: auto;
+	height: auto;
+	padding: 10px;
+}

@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<!-- linking a css style sheet -->
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='my_style_sheet.css') }}">
+	</head>
+
+	<body>
+		<div>
+
+			<a href = "/plus2"><h1>Counter</h1></a>
+			<h3>Count is {{count}}</h3>
+			<form action = "/reset" >
+				
+				<input type='submit' value='Reset'>
+			</form>
+		</div>	
+
+		
+	</body>
+</html>
