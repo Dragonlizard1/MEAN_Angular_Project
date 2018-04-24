@@ -1,0 +1,6 @@
+[submodule "Angular/Restaurant"]
+	path = Angular/Restaurant
+	url = https://github.com/Dragonlizard1/MEAN_Angular_Project.git
+[submodule "AngularProject/APIpokemon"]
+	path = AngularProject/APIpokemon
+	url = https://github.com/Dragonlizard1/MEAN_Angular_Project.git
