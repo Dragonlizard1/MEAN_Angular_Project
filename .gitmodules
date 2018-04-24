@@ -4,3 +4,18 @@
 [submodule "AngularProject/APIpokemon"]
 	path = AngularProject/APIpokemon
 	url = https://github.com/Dragonlizard1/MEAN_Angular_Project.git
+[submodule "AngularProject/ShintoCoin/shintoRest"]
+	path = AngularProject/ShintoCoin/shintoRest
+	url = https://github.com/Dragonlizard1/MEAN_Angular_Project.git
+[submodule "AngularProject/WeatherForecast2/weatherRest"]
+	path = AngularProject/WeatherForecast2/weatherRest
+	url = https://github.com/Dragonlizard1/MEAN_Angular_Project.git
+[submodule "AngularProject/myFirstAngularApp"]
+	path = AngularProject/myFirstAngularApp
+	url = https://github.com/Dragonlizard1/MEAN_Angular_Project.git
+[submodule "AngularProject/ninjagold5/gold"]
+	path = AngularProject/ninjagold5/gold
+	url = https://github.com/Dragonlizard1/MEAN_Angular_Project.git
+[submodule "AngularProject/restfulapi"]
+	path = AngularProject/restfulapi
+	url = https://github.com/Dragonlizard1/MEAN_Angular_Project.git
