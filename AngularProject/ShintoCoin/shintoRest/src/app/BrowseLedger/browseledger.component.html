@@ -1,0 +1,40 @@
+<div id = "wrap1">
+	<div>
+		<h1>Browse the Ledger</h1>
+		<p>Here you can browse all ShintoCoin transactions.</p>
+
+		<table>
+		
+			<tr>
+					<td id = "tabletitle"> ShintoCoinLedger</td>
+			</tr>
+		</table>
+		<table>
+			<thead>
+				
+				<tr>
+					<td class = "tableHead1">Action</td>
+					<td class = "tableHead1">Amount</td>
+					<td class = "tableHead1">Value</td>
+					<td></td>
+				</tr>
+			</thead>
+			
+			
+			<tbody>
+				<tr id = "tableset1" *ngFor="let isdata of datalist5; let i = index ">
+					<td>{{isdata.action}}</td>
+					<td>{{isdata.amount}}</td>
+					<td>{{isdata.value}}</td>				
+					<td><button [routerLink] = "[('ShowLedger/' + i )]">Show Ledger</button></td>
+				</tr>
+			</tbody>
+			
+			
+		</table>
+
+
+
+		<p *ngIf="showmessage">{{message1}}</p>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+#wrapper{
+	background-color: green;
+	height: 1000px;
+	width:970px;
+}
+#top{
+	display: inline;
+	background-color: red;
+	height: 30px;
+	width: 400px;
+}
+.boxes{
+	display: inline-block;
+	text-align: center;
+	border:1px solid black;
+	height: 200px;
+	width: 200px;
+	margin-top: 20px;
+	margin-left: 15px;
+	padding-top: 60px;
+
+}
+#log{
+	width:860px;
+	height: 400px;
+	border: 1px solid black;
+	margin-left: 15px;
+	overflow: scroll;
+}
+h4{
+	margin-left:15px;
+}

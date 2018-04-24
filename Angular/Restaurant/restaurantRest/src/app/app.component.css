@@ -1,0 +1,28 @@
+*
+{
+	font-family: arial;
+
+}
+
+#wrapper
+{
+	width: 1000px;
+	margin: auto;
+	margin-top: 25px;
+ 	margin-bottom: 25px;
+}
+
+
+img
+{
+	width:75px;
+	display: inline-block;
+}
+h1
+{
+	vertical-align: top;
+	display:inline-block;
+	width: 400px;
+	text-align: left;
+	font-weight: bold;
+}

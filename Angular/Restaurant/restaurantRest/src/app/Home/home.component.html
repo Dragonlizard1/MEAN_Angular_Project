@@ -1,0 +1,27 @@
+
+<div id = "wrapper">
+	<div id = "link1">
+	<button id = 'button1' [routerLink] = "['new']">New Restaurant</button>
+	
+
+	
+    	<table>
+    		<tr id = "head1">
+    			<th>Restaurant</th>
+    			<th>Cuisine</th>
+                <th>Actions Available</th>
+    		</tr>
+    		<tr *ngFor="let isdata of infodata" >
+    			<td>{{isdata.name}}</td>
+                <td>{{isdata.cuisine}}</td>
+    			<td><button id = "button2" [routerLink] = "['reviews/' + isdata._id]">Read Reviews</button>
+                    <button id = "button3" [routerLink] = "['edit/' + isdata._id]">Update</button> 
+                    <button id = "button4" (click) = "onButtonClickDelete(isdata._id)">Delete</button> 
+                </td>
+    		</tr>
+    	</table>
+    </div>
+
+</div>
+
+

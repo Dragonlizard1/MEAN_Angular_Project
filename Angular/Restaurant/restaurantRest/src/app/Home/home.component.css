@@ -1,0 +1,61 @@
+*
+{
+    font-family: arial;
+
+}
+
+#wrapper
+{
+	width: 1000px;
+	margin: auto;
+	margin-top: 25px;
+ 	margin-bottom: 25px;
+}
+button
+{
+        border-radius: 15px;
+}
+#button1
+{
+   margin: 10px;
+    padding: 10px;
+    background: linear-gradient( #C6D9C9, #4D6571);
+    color:white;
+
+}
+#button2
+{
+   
+    background: linear-gradient( #CDC5D7, #546777);
+    color: white;
+}
+#button3
+{
+
+    background: linear-gradient( #EBD7C1, #586973);
+     color: white;
+}
+#button4
+{
+   
+    background: linear-gradient( #ECC6C5, #4D5F6E);
+     color: white;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+#head1 {
+    background-color: #dddddd;
+}
+

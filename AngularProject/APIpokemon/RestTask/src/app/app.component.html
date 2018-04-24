@@ -1,0 +1,96 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <label>Start TO: </label><input [(ngModel)]="getStart">
+  <label>End TO: </label><input [(ngModel)]="getEnd">
+ <button id = "button6" (click)="test()">Test Data</button>
+<button id = "button6" (click)="StoreApi()">Store Data</button>
+<button id = "button6" (click)="GetApi()">Show Get pokemon Data</button>
+<button id = "button6" (click)="GetMoveApi()">Show Data</button>
+<button id = "button6" (click)="getPoke()">eevee Server Api</button>
+<button id = "button6" (click)="ServerMoveGetButton()"> Server Move Store Api</button>
+<button id = "button6" (click)="ServerPokemonGetButton()"> Server Pokemon Store Api</button>
+<button id = "button6" (click)="FindServerPokemonGetButton()">  Pokemon List</button>
+
+<button id = "button6" (click)="ButtonScrape()"> scraping</button>
+<button id = "button6" (click)="renavigate()"> renavigate1</button>
+<!-- <div>
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/018_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/065_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/080_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/105_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/115_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/127_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/130_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/142_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150_f3.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/181_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/208_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/212_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/214_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/229_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/248_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/254_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/257_f2.png">
+
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/260_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/282_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/302_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/303_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/306_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/308_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/310_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/319_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/323_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/334_f2.png">
+
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/354_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/359_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/362_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/373_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/376_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/380_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/381_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/384_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/428_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/445_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/448_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/460_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/475_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/531_f2.png">
+
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/555_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/555_f3.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/641_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/642_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/645_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/646_f2.png">
+
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/718_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/718_f3.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/719_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/710_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/741_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/741_f3.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/741_f4.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/745_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/746_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/800_f2.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/800_f3.png">
+<img style = "width:100px" src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/800_f4.png">
+</div>
+ -->
+
+
+
+<div id = "demo">
+</div>
+

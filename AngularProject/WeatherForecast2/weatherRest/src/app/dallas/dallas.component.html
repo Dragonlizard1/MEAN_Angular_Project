@@ -1,0 +1,17 @@
+<div id = "wrap1" style="text-align:center">
+	<div id = "wrap2">
+	<h1>Dallas, TX</h1>
+	<p>Humidity: {{data1.main.humidity}}</p>
+	<p>Temperature(Average): {{data1.main.temp}}</p>
+	<p>Temperature(High): {{data1.main.temp_max}}</p>
+	<p>Temperature(Low): {{data1.main.temp_min}}</p>
+	<p>Status: {{data1.weather[0].main}}</p>
+	</div>
+<img  src = "assets/dallas.jpeg" alt = "dallas">
+
+	<div>
+	    <label >Enter Artist's Name:</label>
+	    <input id="user_input" name="user_input" type="text" [(ngModel)]="search1">
+	    <button type="submit" (click)= "videofind()">search</button>
+	</div>
+</div>

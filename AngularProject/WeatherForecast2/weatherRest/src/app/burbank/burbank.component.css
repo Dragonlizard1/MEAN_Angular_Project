@@ -1,0 +1,34 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+div
+{
+	padding: 10px;
+	border: 1px solid black;
+
+}
+#wrap1
+{
+	text-align: left;
+	width: 800px;
+	margin: auto;
+}
+
+
+#wrap2
+{
+	text-align: left;
+	display:inline-block;
+	border: none;
+	vertical-align: top;
+
+}
+
+img
+{
+	width: 550px;
+
+}
